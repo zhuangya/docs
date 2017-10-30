@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "grunt development"
+    "start": "grunt development",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.4.1",
@@ -33,6 +35,8 @@
     "stylus-loader": "~1.2.1",
     "url-loader": "~0.5.2",
     "webpack": "^1.11.0",
-    "webpack-dev-server": "^1.10.1"
-  }
+    "webpack-dev-server": "^1.10.1",
+    "snyk": "^1.47.0"
+  },
+  "snyk": true
 }
